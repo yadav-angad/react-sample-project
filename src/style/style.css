@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #efefef;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header {
+    background-color: #666;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 0.125rem solid black;
+}
+
+header nav {
+    position: relative;
+}
+
+header nav .sub-menu {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+header nav .sub-menu a {
+    text-align: center;
+    background-color: #ccc;
+    color: #333;
+    width: 100%;
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+
+header nav .sub-menu a:hover {
+    background-color: #999;
+}
+
+header button {
+    border: 0;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+}
+
+header button:hover {
+    background-color: #333;
+}
+
+header nav:hover .sub-menu {
+    display: flex;
+}
+
+header .title {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.content {
+    flex-grow: 1;
+    flex-direction: row;
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.5rem 0.125rem rgba(0, 0, 0, 0.3);
+}
+
+.tableData {
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.5rem 0.125rem rgba(0, 0, 0, 0.3);
+}
+
+.content h1 {
+    margin: 0;
+}
+
+details {
+    margin-top: 0.25rem;
+    padding-left: 1rem;
+}
+
+details summary {
+    cursor: pointer;
+}
+
+footer {
+    border-top: 0.125rem solid black;
+    background-color: #999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.userList {
+    text-align: left;
+    border-collapse: collapse;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #cccccc;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.userList:hover {
+    background-color: cadetblue;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.displayFlexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.displayFlexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.displayFlexRowRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.imageAlignment {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.button {
+    background-color: #999;
+    border: none;
+    color: #333333;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4rem 2rem;
+    cursor: pointer;
+    border-radius: 12px;
+    outline: none;
+    width: 50px;
+}
+
+.button:hover {
+    background-color: #ccc;
+}
+
+.returnButton {
+    background-color: #999;
+    border: none;
+    color: #333333;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 12px;
+    outline: none;
+    width: 100px;
+}
+
+.returnButton:hover {
+    background-color: #ccc;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.inputDiv{
+    width: 100%;
+}
+
+.menu {
+    color: white;
+}
+
+.imageWidth {
+    width: 1.3rem;
+    height: 1.5rem;
+}
+
+.margin5px {
+    margin: 5px;
+}
+
+.resultLabel {
+    margin-left: 10px;
+    color: gray;
+}
+
+.fontStyle2Rem {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.fontStyle1Point2Rem {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.divBorder {
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 100px;
+    background-color: rgb(136, 125, 125);
+}
+
+.imageBorder {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40px;
+    margin-right: 10px;
+    background-color: rgb(136, 125, 125);
+}
+
+.returnButtonStyle{
+    width: 100%;
+    height: 100%;
+}
