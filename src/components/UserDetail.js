@@ -12,7 +12,7 @@ const UserDetail = props => {
       <div className="displayFlexColumn">
         <div className="content">
           <div className="displayFlexColumn">
-            <label className="fontStyle2Rem">
+            <label className="fontStyle1Point7Rem">
               {firstName} {lastName}
             </label>
           </div>
