@@ -11,7 +11,6 @@ var totalRecord = userList.length;
 var totalPageCount = (totalRecord / recordPerPage);
 var from = 0;
 var until = 0;
-let counter = 0;
 
 const Pagination = (props) => {
 
@@ -44,8 +43,6 @@ const Pagination = (props) => {
   }
 
   function getPageRecord(totalRecord) {
-    console.log('counter : ', counter++);
-    console.log('totalRecord : ', totalRecord);
     let currentPage =  props.currentPageNumber;
     let untilRecord = (recordPerPage * props.currentPageNumber);
     let fromRecord = (currentPage - 1) === 0 ? 1 : (((currentPage - 1) * recordPerPage) + 1);
@@ -60,7 +57,6 @@ const Pagination = (props) => {
 
     return (
       <div>
-        <h3>{props.selectedUser}</h3>
         <div className="displayFlexRow">
           <div className = "displayFlexRow inputDiv margin5px">
             <input type="text" 
