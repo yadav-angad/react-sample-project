@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <div className="title">React Training Final Project</div>
+        <div className="title">React Training Project</div>
         <nav>
           <button>
             <NavLink to="/" className="menu">Home</NavLink>
